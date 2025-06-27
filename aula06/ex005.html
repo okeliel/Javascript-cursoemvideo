@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            background-color: rgb(46, 134, 222);
+            color: white;
+            font: normal 18pt arial;
+        }
+    </style>
+    <title>Primeiros Passos com DOM</title>
+</head>
+<body>
+    <h1>Iniciando Estudos com DOM</h1>
+
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
+    <div id="msg2"> Lorem, ipsum dolor.</div>
+    <div name="msg3">Lorem, ipsum dolor name</div>
+    <div class="msg4">Lorem ipsum dolor class</div>
+    <div class="msg5">Lorem, ipsum dolor selector. </div>
+    <script>
+
+            var corpo = window.document.body
+
+            var p1 = window.document.getElementsByTagName('p')[1] //primeira tag P
+
+            //document.write(p1.innerText) //não pega o negrito
+            document.write(p1.innerHTML)
+
+            corpo.style.background = 'green' 
+            p1.style.color = 'red'
+            // windows.document.write('está escrito assim: ' + p1.innerText) //não funciona
+        
+        var d = window.document.getElementById('msg')
+        d.style.background = 'yellow'
+        d.innerText = 'Olá, mundo!' 
+    
+            var d2 = window.document.getElementById('msg2')
+            d2.style.background = 'blue'
+            //d2.innerText = 'Olá, mundo!'
+            windows.document.getElementById('msg2').innerText = 'Olá, mundo.' //não funciona
+
+        
+        var  d3 = window.document.getElementsByName('msg3')
+        d3.style.background = 'black'
+        d3.innerText = 'Oi'
+        //Não funcionou
+
+            var d4 = window.document.getElementsByClassName('msg4')
+            d4.style.background = "black"
+            d4.innerText = 'oi'
+            //não funcionou
+        
+        
+        var d5 = window.document.querySelector('div.msg')
+        d5.style.background = 'blue'
+            //não funcionou
+            
+    </script>
+</body>
+</html>
