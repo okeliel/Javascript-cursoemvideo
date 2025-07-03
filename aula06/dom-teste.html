@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+
+<style>
+    body {
+        background: blue;
+        color: rgb(255, 255, 255);
+        font: normal 20pt arial;
+    }
+</style>
+<body>
+    <h1>Testando o Dom </h1>
+        <p>Aqui vai o resultado</p>
+        <p>Aprendendo a usar <strong>DOM</strong> com JavaScript.</p>
+
+            <div id="msg">Clique em mim</div>
+            <div class="msg2">Tente Outra Vez!</div>
+            <div id="nike">Just Do It!</div>
+
+
+
+                <script>
+                window.document.write('Hello, world!')
+                </script>
+
+                <br>
+    <!--------------------POR MARCA----------------->
+                <script>
+                    window.document.write(window.document.charset)
+                </script>
+
+                <br>
+
+                <script>
+                    window.document.write(window.navigator.appName)
+                </script>
+
+                <br>
+
+                <script>
+                    window.document.write(window.document.URL)
+                </script>
+
+                <br>
+
+                <script>
+
+                    var corpo = window.document.body
+                    var p1 = window.document.getElementsByTagName('p')[1]
+                    window.document.write('Está escrito assim: ' + p1.innerText)
+
+                    window.document.write (p1.innerHTML)
+                    
+                    p1.style.color = 'black'
+                    corpo.style.background = 'red'
+
+                    window.alert(p1.innerText)
+                </script>
+    <!--------------------POR ID----------------->
+                <script>
+                    var d = window.document.getElementById('msg')
+                    d.style.background = 'green'
+
+                    //d.innerText = 'Estou esperando...' OU
+
+                    window.document.getElementById ('msg').innerText = 'Olá'
+                </script>
+
+    <!--------------------POR NAME----------------->
+
+                <script>
+
+                    //Esse é igual ao anterior
+                    window.document.getElementsByName ('msg') [0]
+                    d.innerText = 'Oi'
+                </script>
+    <!--------------------POR CLASS----------------->
+
+                <script>
+                    window.document.getElementsByClassName ('msg2') [0]
+                    d.innerText = 'Salve!'
+                    
+                </script>
+    <!------------------POR SELETOR--------------->
+
+                <script>
+                var f = window.document.querySelector('#nike')
+                f.style.background = 'green'
+
+                //NÃO FUNCIONOU!
+                </script>
+</body>
+</html>
