@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+</head>
+
+<style>
+    div#area {
+        font: normal 20pt areal;
+        background-color: green;
+        color: white;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        line-height: 200px;
+
+    }
+</style>
+<body>
+
+   <div id="area" onclick="clicar()" onmouseenter="entrou()" onmouseout="saiu ()">
+
+        teste...
+   </div>
+
+   <script>
+    var a = window.document.getElementById('area')
+    
+    function clicar () {
+    
+    a.innerText = 'vida'
+    a.style.background = 'red'
+    }
+
+    function entrou () {
+        a.innerText = 'Caos'
+    }
+
+    function saiu() {
+        a.innerText = 'Lost'
+        a.style.background = 'green'
+    }
+
+   </script>
+</body>
+</html>
+
+<!--
+EVENTOS DOM
+
+Eventos de mouse
+
+mouseenter
+mousemove
+mousedown
+mouseup
+click
+mouseout
+
+Esses  não são os únicos!
+
+
+Este link possui diversas referências!
+https://developer.mozilla.org/en-US/docs/Web/Events
+
+-----------------------
+FUNÇÃO
+
+É um conjunto de códigos que só são executadas quando o evento ocorre.
+
+EXEMPLO:  vou programar 10 linhas.Elas são chamadas de BLOCO.
+
+Essas dez linhas não serão executadas automaticamente; agora a execução só ocorrerá após um clique, por exemplo. Para isso acontecer é necessário colocar o código em um BLOCO.
+
+Um BLOCO em JS é delimitado em chaves {}.
+
+Esse BLOCO deve ser nomeado com uma 'function'. 
+A 'function' deve receber um nome. Geralmente os nomes das funções são ações possíveis de fazer.
+
+    function ação () {
+        lorem
+    }
+
+    Dentro dos parênteses do nome da 'function' é possível colocar parâmetros.
+
+    Os eventos podem ser configurados no HTML ou no JS.
+
+    ----------------------------
+
+    Quando a variável está fora da 'function' é possível utilizá-la para todas as 'funtions.'
+
+    Quando ela está dentro da 'funtion' B, por exemplo, ela só pode ser utilizada pela 'function' B.
+
+
+    var a = window.document.getElementById('area')
+---------------------------------------------
+
+Aqui, é possivel utilizar o código dentro do JS.
+
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter',entrar)
+        a.addEventListener('mouseout',sair)
+    -->
