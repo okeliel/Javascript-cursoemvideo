@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTE DOM PARTE 2</title>
+</head>
+<body>
+        <h1>TESTE DOM PARTE 2</h1>
+
+        <p>Aqui vai o resultado</p>
+        <p>Aprendendo a usar <strong>DOM</strong> em Javascript.</p>
+        <div>Clique em mim</div>
+        <p>-----------------------------------------------</p>
+
+        <script>
+            var p1 = document.getElementsByTagName ('p') [1]
+            document.write(p1.innerHTML)
+            p1.style.color = 'red'
+            
+            var corpo = document.body
+            corpo.style.color = 'blue'
+        </script>
+    <br>
+        <script>
+            var p2 = document.getElementsByTagName('p') [1]
+            document.write(p2.innerText)
+        </script>
+
+
+
+</body>
+</html>

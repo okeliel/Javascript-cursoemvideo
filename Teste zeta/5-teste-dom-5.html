@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTE DOM PARTE 5</title>
+</head>
+<body>
+        <h1>TESTE DOM PARTE 5</h1>
+
+        <p class="msg">Clique em mim!!!</p>
+
+        <script>
+            var corpo = document.body
+            var p1 = document.getElementsByClassName('msg') [0]
+
+            p1.innerText = 'Aguardando...'
+            p1.style.background = 'red'
+            corpo.style.background = 'green'     
+        </script>
+</body>
+</html>

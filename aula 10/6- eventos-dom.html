@@ -27,7 +27,11 @@
 
    <script>
     var a = window.document.getElementById('area')
-    
+    /*
+    a.addEventListener('onclick', clicar)
+    a.addEventListener('onmouseenter', entrou)
+    a.addEventListener('onmouseout', saiu)
+    */
     function clicar () {
     
     a.innerText = 'vida'
@@ -44,6 +48,7 @@
     }
 
    </script>
+
 </body>
 </html>
 
@@ -52,17 +57,17 @@ EVENTOS DOM
 
 Eventos de mouse
 
-mouseenter
-mousemove
-mousedown
-mouseup
-click
-mouseout
+mouseenter - mouse entra na DIV
+mousemove - o mouse se move dentro da DIV
+mousedown - clicou e segurou a tecla do mouse
+mouseup - momento que o botão do mouse é solto
+click - apertar e soltar rápidamente.
+mouseout - quando o mouse se move para fora da DIV
 
 Esses  não são os únicos!
 
 
-Este link possui diversas referências!
+Este link possui diversas referências de Eventos DOM!
 https://developer.mozilla.org/en-US/docs/Web/Events
 
 -----------------------
