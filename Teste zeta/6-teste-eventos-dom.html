@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+</head>
+
+<style>
+.quad {
+    background-color: brown;
+    width: 200px;
+    height: 150px;
+    padding: 160px; 
+    text-align: center;
+    color: white;
+    margin: 250px;
+
+    font-size: 60px;
+}
+
+div {
+    margin: 300px;
+}
+</style>
+
+<body>
+    
+    <div class="quad" onclick="clicou ()" onmouseenter="entrou ()" onmouseout="saiu ()">
+       Teste!
+    </div> 
+
+
+    <script>
+        var a = document.getElementsByClassName ('quad') [0]
+
+    /*
+       a.addEventListener('onmouseenter', entrou)
+       a.addEventListener('onmouseout', saiu)
+       a.addEventListener('onclick', clicou)
+       NÃO FUNCIONA!
+    */
+        function clicou () {
+            a.innerHTML = 'oi'
+            a.style.background = 'Yellow'
+        }
+
+        function entrou () {
+            a.innerHTML = 'Como vai?'
+            a.style.background = 'Green'
+        }
+
+        function saiu () {
+            a.innerHTML = 'Tchau'
+            a.style.background = 'blue'
+        }
+    </script>
+</body>
+</html>
