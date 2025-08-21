@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gringo ou Brasileiro</title>
+</head>
+<body>
+    <h1>Gringo ou Brasileiro</h1>
+
+    nacionalidade: <input type="text" id="txtnac" placeholder="Seu país de nascimento." function = 'Verificar ()'>
+
+    <input type="button" value="Verificar" onclick="verificar ()">
+    <div id="res"></div>
+
+
+    <script>
+        function verificar () {
+
+        var txtv  = document.getElementById('txtnac').value.trim().toLowerCase()
+        var  res = document.getElementById('res')
+       
+
+        if  (txtv==='brasil') {
+            res.innerHTML += '<p>Você é brasileiro.</p>'    
+        }
+        
+        else  {
+            res.innerHTML += '<p>Você é gringo</p>'
+        }
+        }
+
+
+    </script>
+
+    
+
+
+    <p>Digite sua nacionalidade e clique em verificar.</p>
+</body>
+</html>
