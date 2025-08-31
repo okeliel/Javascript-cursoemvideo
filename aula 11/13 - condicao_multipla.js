@@ -35,4 +35,5 @@ switch (diaSem) {
 
     default:
         console.log('[ERRO] - ATENÇÃO!')
+        break
 }
