@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quarto Script de Javascript</title>
+
+    <style>
+    body {
+        font: 20pt arial;
+    }
+    </style>
+
 </head>
 <body>
     
     <h1>Exercício 4</h1>
 
     <script>
-
-
     var nome = window.prompt('Qual é o seu nome?')
 
-    document.write (`Olá ${nome}! Seu nome tem ${nome.length} letras.`)
+    document.write (`Olá ${nome}! Seu nome tem ${nome.length} letras;`)
 
-    document.write (`Olá ${nome}! Seu nome em maiúsculo é ${nome.toUpperCase()}`)
-
+    document.write (` <br> seu nome em maiúsculo é ${nome.toUpperCase()};`)
+    document.write (` <br> seu nome em minúsculo é ${nome.toLowerCase()}. `)    
     </script>
-
-    <!----------------------------------->
-
-    
-
 
 </body>
 </html>
