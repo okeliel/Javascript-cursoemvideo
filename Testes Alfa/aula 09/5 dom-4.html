@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom com Name</title>
+</head>
+<body>
+        <h1>
+            Dom com Name
+        </h1>
+
+        <p>Aprendendo a utillizar Javascript</p>
+
+        <p>Primeiros testes com DOM!</p>
+
+        <div name = "msg" >Clique em mim!</div>
+        <div name = 'msg'>Olá, tudo bem?</div>
+
+        <p>------------------------</p>
+
+        <script>
+          var corpo = document.body
+          var d = document.getElementsByName ('msg') [1]
+
+          d.style.background = 'yellow'
+         
+        </script>
+      
+</html>

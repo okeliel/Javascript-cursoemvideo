@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom com querySelector</title>
+</head>
+<body>
+        <h1>
+            Dom com querySelector
+        </h1>
+
+        <p>Aprendendo a utillizar Javascript</p>
+
+        <p>Primeiros testes com DOM!</p>
+
+        <div class = "msg" >Clique em mim!</div>
+        <div id = 'msg'>Olá, tudo bem?</div>
+      
+
+        <p>------------------------</p>
+
+       <script>
+        var corpo = document.body
+        var d = document.querySelector('.msg')
+        var e = document.querySelector('#msg')
+
+        d.style.background = 'green'
+        e.style.background = 'yellow'
+       </script>
+      
+</html>
