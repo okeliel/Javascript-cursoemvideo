@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            background-color: rgb(255, 213, 0);
+            padding: 100px ;
+            height: 140px;
+            width: 140px;
+        }
+
+        p {
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="clique" onclick="clicou()" onmouseenter="entrou()" onmouseout=" saiu()" > 
+<p>Passe por mim...</p></div>
+
+<script>
+    var a =  window.document.getElementById('clique')
+
+    function clicou () {
+        a.innerHTML = 'Tudo bem!'
+        a.style.background = 'red'
+    }
+
+    function entrou () {
+        a.innerHTML = 'Oi'
+        a.style.background = 'yellow'
+    }
+
+    function saiu () {
+        a.innerHTML = 'Tchau'
+        a.style.background = 'green'
+    }
+
+
+</script>
+</body>
+</html>
