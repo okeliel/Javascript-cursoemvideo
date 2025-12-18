@@ -7,6 +7,7 @@ function carregar () {
    var hora = data.getHours()
    msg.innerHTML = `Agora são ${hora} horas`
 
+   var hora = 10
    
    if (hora >= 0 && hora < 12) {
       //BOMDIA
