@@ -4,6 +4,7 @@ function verificar () {
     var ano = data.getFullYear()
     var fano = document.getElementById('ano')
     var res = document.querySelector ('div#res')
+    
     if (fano.value.length == 0 ||  fano.value > ano) {
     } else {
         var fsexo = document.getElementsByName('radsex')
@@ -13,6 +14,7 @@ function verificar () {
         img.setAttribute('id','foto')
 
         if (fsexo[0].checked) {
+
             gênero = 'Homem'
             if (idade >= 0 && idade < 10) /*criança*/{
             img.setAttribute('src','baby_boy.png')
@@ -24,6 +26,7 @@ function verificar () {
             img.setAttribute('src', 'old_boy.png') /*idoso*/ 
             }
         }   else if (fsexo [1]. checked) {
+
             gênero = 'Mulher'
             if (idade >= 0 && idade < 10) /*criança*/ {
                 img.setAttribute('src' , 'baby_girl.png')
