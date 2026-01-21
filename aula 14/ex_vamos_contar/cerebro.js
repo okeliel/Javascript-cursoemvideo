@@ -1,6 +1,4 @@
 /*
-
-
 ###########################################################################
 Para informar a impossibilidade da utilização do PASSO 0, faça: 
 

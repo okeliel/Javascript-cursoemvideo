@@ -1,0 +1,35 @@
+Crie uma função chamada tabuada.
+
+Pegue o elemento do HTML com id txtn e guarde na variável num.
+
+Pegue o elemento do HTML com id seltab e guarde na variável tab.
+
+Se o valor digitado no campo estiver vazio,
+mostre uma mensagem de alerta dizendo “Tente Novamente!”.
+
+Caso contrário:
+
+Converta o valor digitado em um número e guarde na variável n.
+
+Crie um contador chamado c, começando em 1.
+
+Limpe o conteúdo atual da área onde a tabuada será exibida.
+
+Enquanto o contador c for menor ou igual a 10:
+
+Crie um elemento do tipo option.
+
+Defina o texto da opção no formato:
+n × c = resultado.
+
+Defina o valor interno da opção como tab + contador.
+
+Adicione a opção criada dentro do elemento da tabuada.
+
+Aumente o contador em 1.
+
+Fim do loop.
+
+Fim da condição.
+
+Fim da função.
