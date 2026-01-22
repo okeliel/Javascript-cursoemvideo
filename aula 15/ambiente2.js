@@ -2,7 +2,7 @@ let valores = [8,4,6,2,9]
 
 console.log(valores)
 
-/*
+
 console.log(valores[0])
 console.log(valores[1])
 console.log(valores[2])
@@ -20,7 +20,7 @@ for (let pos in valores) {
     console.log(`A posição ${pos} tem o valor ${valores[pos]}`)
 }
 
-*/
+
 
 let pos = valores.indexOf(2)
 if (pos == -1) {
